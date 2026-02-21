@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ingrosso Pelletteria Marecchiese - Rimini</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f5f2;
+    color: #333;
+}
+header {
+    background: #3b2f2f;
+    color: white;
+    padding: 15px 0;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.logo-icon {
+    width: 60px;
+    height: 60px;
+    background: #d4a373;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #3b2f2f;
+}
+.logo-text {
+    font-family: 'Playfair Display', serif;
+}
+.logo-text h1 {
+    margin: 0;
+    font-size: 28px;
+}
+.logo-text p {
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+nav {
+    background: #2a2222;
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a:hover {
+    color: #d4a373;
+}
+.hero {
+    background: url('https://images.unsplash.com/photo-1589987607627-0bcb3a7c33d4') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.hero h2 {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Playfair Display', serif;
+}
+.section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+    color: #3b2f2f;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #d4a373;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.btn:hover {
+    background: #b5835a;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.map-container {
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+footer {
+    background: #3b2f2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+@media(max-width:768px){
+    .products{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-container">
+        <div class="logo-icon">PM</div>
+        <div class="logo-text">
+            <h1>Pelletteria Marecchiese</h1>
+            <p>INGROSSO CINTURE & PORTAFOGLI</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#chi-siamo">Chi Siamo</a>
+    <a href="#prodotti">Prodotti</a>
+    <a href="#ingrosso">Ingrosso</a>
+    <a href="#contatti">Contatti</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Qualità Artigianale in Vera Pelle</h2>
+</section>
+
+<section class="section" id="chi-siamo">
+    <h2>Chi Siamo</h2>
+    <p>
+        Azienda specializzata nella vendita all’ingrosso di articoli di pelletteria con sede in Via Marecchiese a Rimini.
+        Forniamo negozi e boutique con cinture e portafogli in vera pelle di alta qualità.
+    </p>
+</section>
+
+<section class="section" id="prodotti">
+    <h2>I Nostri Prodotti</h2>
+    <div class="products">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0" alt="Cinture in pelle">
+            <h3>Cinture in Pelle</h3>
+            <p>Eleganti, resistenti e disponibili in vari colori.</p>
+            <a href="#contatti" class="btn">Richiedi Catalogo</a>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc" alt="Portafogli in pelle">
+            <h3>Portafogli in Pelle</h3>
+            <p>Design classico e moderno per uomo e donna.</p>
+            <a href="#contatti" class="btn">Richiedi Catalogo</a>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="ingrosso">
+    <h2>Vendita all’Ingrosso</h2>
+    <p>
+        Prezzi riservati ai rivenditori, forniture rapide e possibilità di personalizzazione.
+        Contattaci per ricevere il listino dedicato agli operatori del settore.
+    </p>
+</section>
+
+<section class="section" id="contatti">
+    <h2>Contattaci</h2>
+    <p><strong>Indirizzo:</strong> Via Marecchiese, Rimini (RN)</p>
+    <p><strong>Email:</strong> info@pelletteriamarecchiese.it</p>
+    <p><strong>Telefono:</strong> +39 0541 000000</p>
+
+    <form>
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="5" placeholder="Messaggio"></textarea>
+        <button type="submit" class="btn">Invia Messaggio</button>
+    </form>
+
+    <div class="map-container">
+        <iframe 
+            src="https://maps.google.com/maps?q=Via%20Marecchiese%20Rimini&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Pelletteria Marecchiese - Via Marecchiese - Rimini</p>
+</footer>
+
+</body>
+</html>
